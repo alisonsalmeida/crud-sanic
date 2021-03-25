@@ -1,0 +1,15 @@
+version: "3"
+
+
+services:
+  cadastro-database:
+    image: postgres:9.6
+    container_name: cadastro_database
+    environment:
+      - POSTGRES_DB=cadastro
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+    volumes:
+      - "./postgres:/var/lib/postgresql/data"
+    ports:
+      - 5432:5432
