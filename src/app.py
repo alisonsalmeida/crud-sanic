@@ -21,4 +21,4 @@ async def create_tables(server: Sanic, _):
 
 @app.listener('after_server_start')
 async def depois(server: Sanic, _):
-    print('depois do servidor iniciar')
+    pass
